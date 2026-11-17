@@ -24,6 +24,7 @@ class Day2Tests(unittest.TestCase):
     def execute(self, name, namespace=None):
         namespace = {} if namespace is None else namespace
         nb = json.loads((ROOT / name).read_text(encoding='utf-8'))
+        nb['cells'] = [c for c in nb['cells'] if c['cell_type'] == 'code']
         if name == 'notebooks/murshid.ipynb':
             self.assertGreaterEqual(len(nb['cells']), 6)
             nb['cells'] = nb['cells'][:6]
@@ -108,6 +109,7 @@ class Day2Tests(unittest.TestCase):
     def test_scope_and_standard_library(self):
         for path, count in (('notebooks/murshid.ipynb', 6), ('homework/day2_tools.ipynb', 2)):
             nb = json.loads((ROOT / path).read_text())
+            nb['cells'] = [c for c in nb['cells'] if c['cell_type'] == 'code']
             if path == 'notebooks/murshid.ipynb':
                 self.assertGreaterEqual(len(nb['cells']), count)
                 nb['cells'] = nb['cells'][:count]

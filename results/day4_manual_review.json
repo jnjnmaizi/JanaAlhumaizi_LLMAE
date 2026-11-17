@@ -1,0 +1,32 @@
+{
+  "reviewer": "AI implementation assistant; interpretation of actual saved outputs, not a claim of learner or partner review",
+  "context": "You can check your application status using its reference number.",
+  "expected_meaning": "Each answer should convey using or needing the reference number, without inventing fees, deadlines, or status.",
+  "cases": [
+    {
+      "id": "E01",
+      "answer": "Use its reference number",
+      "supported_by_context": true,
+      "unsupported_claims_found": false,
+      "reason": "The answer tells the user to use the reference number, matching the supplied context. It adds no fee, date, or application status."
+    },
+    {
+      "id": "E02",
+      "answer": "Reference number",
+      "supported_by_context": true,
+      "unsupported_claims_found": false,
+      "reason": "The short noun phrase directly answers what is needed: the reference number. It omits a full sentence but adds no unsupported requirement."
+    },
+    {
+      "id": "E03",
+      "answer": "Use its reference number",
+      "supported_by_context": true,
+      "unsupported_claims_found": false,
+      "reason": "The answer correctly points to the reference number as the way to check status, with no unsupported details."
+    }
+  ],
+  "observed_generation_failures": [],
+  "limitation": "Three related English paraphrases and a keyword proxy cannot establish general accuracy; wrong answers can contain both keywords.",
+  "feasible_improvement": "Add independently reviewed negative and ambiguous cases, including answers that contain the keywords but contradict the context.",
+  "learner_review": "Read and confirm or revise these assessments before submission."
+}

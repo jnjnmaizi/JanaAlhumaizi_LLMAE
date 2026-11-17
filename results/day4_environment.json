@@ -1,0 +1,13 @@
+{
+  "python": "3.12.7",
+  "platform": "Darwin",
+  "device": "cpu",
+  "torch": "2.6.0",
+  "transformers": "4.49.0",
+  "sentencepiece": "0.2.0",
+  "cpu_threads": 2,
+  "model_weights": "previously downloaded pinned revision; offline cache reused",
+  "external_inference_api_calls": 0,
+  "actual_billed_api_cost_usd": 0,
+  "setup_warning": "pip cache was not writable; pip disabled its cache. Installed dependencies were already available and all cells completed. Local path redacted in saved notebook output."
+}

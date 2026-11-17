@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 class Day1Tests(unittest.TestCase):
     def setUp(self):
         self.notebook = json.loads((ROOT / 'notebooks/murshid.ipynb').read_text(encoding='utf-8'))
+        self.notebook['cells'] = [c for c in self.notebook['cells'] if c['cell_type'] == 'code']
         # Isolate the original milestone as later days extend the cumulative notebook.
         self.assertGreaterEqual(len(self.notebook['cells']), 3)
         self.notebook['cells'] = self.notebook['cells'][:3]

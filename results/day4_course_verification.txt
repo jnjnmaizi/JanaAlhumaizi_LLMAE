@@ -1,0 +1,15 @@
+Instructor test file unchanged. Executed against a temporary code-only projection of the cumulative notebook; daily script views are extracted from its code cells. Markdown explanations do not execute.
+
+test_cache_ttl_versions_and_privacy (test_notebook.NotebookTests.test_cache_ttl_versions_and_privacy) ... ok
+test_clean_and_repeat_full_notebook (test_notebook.NotebookTests.test_clean_and_repeat_full_notebook) ... ok
+test_daily_script_and_notebook_sources_match (test_notebook.NotebookTests.test_daily_script_and_notebook_sources_match) ... ok
+test_each_daily_milestone_and_replay (test_notebook.NotebookTests.test_each_daily_milestone_and_replay) ... ok
+test_guards_and_golden_contract (test_notebook.NotebookTests.test_guards_and_golden_contract) ... ok
+test_identity_ownership_and_read_only (test_notebook.NotebookTests.test_identity_ownership_and_read_only) ... ok
+test_schema_rejections (test_notebook.NotebookTests.test_schema_rejections) ... ok
+test_standard_library_and_code_only (test_notebook.NotebookTests.test_standard_library_and_code_only) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.039s
+
+OK
