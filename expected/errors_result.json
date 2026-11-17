@@ -1,0 +1,21 @@
+{
+  "intentional_caught_errors": [
+    {
+      "error_type": "ValueError",
+      "message": "Enter a non-empty question string.",
+      "expected_rejection": true
+    },
+    {
+      "error_type": "ValueError",
+      "message": "Enter a non-empty question string.",
+      "expected_rejection": true
+    },
+    {
+      "error_type": "ValueError",
+      "message": "Use at most 500 characters.",
+      "expected_rejection": true
+    }
+  ],
+  "corrected_input": "accepted",
+  "checks": "passed"
+}

@@ -1,0 +1,23 @@
+test_fresh_execution_baseline_and_saved_output (test_day1.Day1Tests.test_fresh_execution_baseline_and_saved_output) ... ok
+test_invalid_input_never_calls_client (test_day1.Day1Tests.test_invalid_input_never_calls_client) ... ok
+test_repeat_execution (test_day1.Day1Tests.test_repeat_execution) ... ok
+test_three_code_cells_standard_library_only (test_day1.Day1Tests.test_three_code_cells_standard_library_only) ... ok
+test_whitespace_and_unknown_question (test_day1.Day1Tests.test_whitespace_and_unknown_question) ... ok
+test_five_cases_and_saved_report (test_day2.Day2Tests.test_five_cases_and_saved_report) ... ok
+test_homework_seven_cases_saved_report_and_replay (test_day2.Day2Tests.test_homework_seven_cases_saved_report_and_replay) ... ok
+test_homework_validation_and_authorization_are_distinct (test_day2.Day2Tests.test_homework_validation_and_authorization_are_distinct) ... ok
+test_invalid_schema_never_calls_status_tool (test_day2.Day2Tests.test_invalid_schema_never_calls_status_tool) ... ok
+test_ownership_spoofing_and_read_only (test_day2.Day2Tests.test_ownership_spoofing_and_read_only) ... ok
+test_replay_and_day1_regression (test_day2.Day2Tests.test_replay_and_day1_regression) ... ok
+test_scope_and_standard_library (test_day2.Day2Tests.test_scope_and_standard_library) ... ok
+test_evaluator_reports_failures_and_privacy (test_day3.Day3Tests.test_evaluator_reports_failures_and_privacy) ... ok
+test_golden_report_saved_results_and_replay (test_day3.Day3Tests.test_golden_report_saved_results_and_replay) ... ok
+test_guards_stop_routing_and_boundary (test_day3.Day3Tests.test_guards_stop_routing_and_boundary) ... ok
+test_homework_report_exact_errors_and_corrected_input (test_day3.Day3Tests.test_homework_report_exact_errors_and_corrected_input) ... ok
+test_invalid_output_contract_and_bad_ticket (test_day3.Day3Tests.test_invalid_output_contract_and_bad_ticket) ... ok
+test_only_day1_to_day3_and_standard_library (test_day3.Day3Tests.test_only_day1_to_day3_and_standard_library) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.030s
+
+OK
