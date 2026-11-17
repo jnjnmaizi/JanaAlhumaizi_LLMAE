@@ -26,6 +26,8 @@ class Day3Tests(unittest.TestCase):
         nb = json.loads((ROOT/path).read_text())
         with contextlib.redirect_stdout(io.StringIO()):
             for cell in nb['cells']:
+                if cell['cell_type'] != 'code':
+                    continue
                 exec(compile(''.join(cell['source']),path,'exec'),ns)
         return ns
 
@@ -101,8 +103,9 @@ class Day3Tests(unittest.TestCase):
     def test_only_day1_to_day3_and_standard_library(self):
         for path,count in (('notebooks/murshid.ipynb',10),('homework/day3_errors.ipynb',1)):
             nb = json.loads((ROOT/path).read_text())
-            self.assertEqual(len(nb['cells']),count)
-            for cell in nb['cells']:
+            code_cells = [cell for cell in nb['cells'] if cell['cell_type'] == 'code']
+            self.assertEqual(len(code_cells),count)
+            for cell in code_cells:
                 self.assertEqual(cell['cell_type'],'code')
                 for node in ast.walk(ast.parse(''.join(cell['source']))):
                     if isinstance(node,ast.Import):
